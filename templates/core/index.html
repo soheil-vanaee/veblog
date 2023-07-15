@@ -1,0 +1,60 @@
+{% extends 'core/base.html' %}
+{% block title %}Ve blog{% endblock %}
+{% block header %}
+    {% for detail in details %}
+        <img src="{{ detail.HeaderImage }}" alt="">
+    <p>{{ detail.Name }}</p>
+    {% endfor %}
+{% endblock %}
+{% block main %}
+{#    {% for post in posts %}#}
+        <div class="max-w-sm m-3 rounded w-full lg:max-w-full lg:flex shadow-lg">
+          <div class="h-48 lg:h-auto lg:w-48 flex-none bg-cover rounded-t lg:rounded-t-none lg:rounded-l text-center overflow-hidden" style="background-image: url('https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fcdn-images-1.medium.com%2Fmax%2F2600%2F1*JT6Yw84iWanGLU2wTfKIIg.jpeg&f=1&nofb=1&ipt=e5d6804831fbc74a111d2f0e2c9b8441502a34eed7cd74000d769506f47d7e5b&ipo=images')" title="Woman holding a mug">
+          </div>
+          <div class=" bg-white rounded-b lg:rounded-b-none lg:rounded-r p-4 flex flex-col justify-between leading-normal">
+            <div class="mb-8">
+              <a class="text-gray-900 font-bold text-xl mb-2 text-green-800" href="#">Can coffee make you a better developer?</a>
+              <p class="text-gray-700 text-base">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus quia, nulla! Maiores et perferendis eaque, exercitationem praesentium nihil.</p>
+            </div>
+            <div class="flex items-center">
+              <div class="text-sm">
+                <p class="text-gray-900 leading-none">Jonathan Reinink</p>
+                <p class="text-gray-600">Aug 18</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="max-w-sm m-3 rounded w-full lg:max-w-full lg:flex shadow-lg">
+          <div class="h-48 lg:h-auto lg:w-48 flex-none bg-cover rounded-t lg:rounded-t-none lg:rounded-l text-center overflow-hidden" style="background-image: url('https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fcdn-images-1.medium.com%2Fmax%2F2600%2F1*JT6Yw84iWanGLU2wTfKIIg.jpeg&f=1&nofb=1&ipt=e5d6804831fbc74a111d2f0e2c9b8441502a34eed7cd74000d769506f47d7e5b&ipo=images')" title="Woman holding a mug">
+          </div>
+          <div class=" bg-white rounded-b lg:rounded-b-none lg:rounded-r p-4 flex flex-col justify-between leading-normal">
+            <div class="mb-8">
+              <a class="text-gray-900 font-bold text-xl mb-2 text-green-800" href="#">Can coffee make you a better developer?</a>
+              <p class="text-gray-700 text-base">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus quia, nulla! Maiores et perferendis eaque, exercitationem praesentium nihil.</p>
+            </div>
+            <div class="flex items-center">
+              <div class="text-sm">
+                <p class="text-gray-900 leading-none">Jonathan Reinink</p>
+                <p class="text-gray-600">Aug 18</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="max-w-sm m-3 rounded w-full lg:max-w-full lg:flex shadow-xl">
+          <div class="h-48 lg:h-auto lg:w-48 flex-none bg-cover rounded-t lg:rounded-t-none lg:rounded-l text-center overflow-hidden" style="background-image: url('https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fcdn-images-1.medium.com%2Fmax%2F2600%2F1*JT6Yw84iWanGLU2wTfKIIg.jpeg&f=1&nofb=1&ipt=e5d6804831fbc74a111d2f0e2c9b8441502a34eed7cd74000d769506f47d7e5b&ipo=images')" title="Woman holding a mug">
+          </div>
+          <div class=" bg-white rounded-b lg:rounded-b-none lg:rounded-r p-4 flex flex-col justify-between leading-normal">
+            <div class="mb-8">
+              <a class="text-gray-900 font-bold text-xl mb-2 text-green-800" href="#">Can coffee make you a better developer?</a>
+              <p class="text-gray-700 text-base">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus quia, nulla! Maiores et perferendis eaque, exercitationem praesentium nihil.</p>
+            </div>
+            <div class="flex items-center">
+              <div class="text-sm">
+                <p class="text-gray-900 leading-none">Jonathan Reinink</p>
+                <p class="text-gray-600">Aug 18</p>
+              </div>
+            </div>
+          </div>
+        </div>
+{#    {% endfor %}#}
+{% endblock %}
