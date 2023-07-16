@@ -1,0 +1,27 @@
+{% extends 'post/base.html' %}
+{% block main %}
+<div class="p-3">
+<div class="mx-auto max-w-screen-md py-12">
+  <div class="relative mb-12 flex flex-col overflow-hidden rounded-xl bg-white bg-clip-border text-gray-700 shadow-md">
+    <img
+      alt="nature"
+      class="h-[32rem] w-full border object-cover object-center"
+      src="{{ PostId.image }};auto=format&amp;fit=crop&amp;w=2717&amp;q=80"
+    />
+  </div>
+  <h2 class="mb-2 block font-sans text-4xl font-semibold leading-[1.3] tracking-normal text-blue-gray-900 antialiased">
+      {{ PostId.title }}
+  </h2>
+  <p class="block font-sans text-base font-normal leading-relaxed text-gray-700 antialiased">{{ PostId.description }}</p>
+    <hr>
+    <br>
+  <p class="block font-sans text-base font-normal leading-relaxed text-gray-700 antialiased">{{ PostId.body }}</p>
+{#    <hr class="">#}
+    <br>
+      <div class="text-sm p-2">
+        <p class="text-gray-900 leading-none">{{ PostId.created_by }}</p>
+        <p class="text-gray-600">{{ PostId.created_at }}</p>
+      </div>
+</div>
+</div>
+{% endblock %}

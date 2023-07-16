@@ -5,7 +5,7 @@ from post.models import PostDemoMainPage
 
 def index(request):
     details = AboutMe.objects.all()
-    posts = PostDemoMainPage.objects.all()
+    posts = PostDemoMainPage.objects.filter(publiced=True)
     return render(request, 'core/index.html',{
         'posts':posts,
         'details':details,

@@ -10,3 +10,4 @@ class PostDemoMainPage(models.Model):
     image = models.ImageField(upload_to="images_posts", null=True, blank=True)
     created_at = models.DateTimeField(auto_now=True)
     created_by = models.ForeignKey(User, on_delete=models.CASCADE)
+    publiced = models.BooleanField(default=False)
